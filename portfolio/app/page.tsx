@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -12,58 +13,38 @@ export default function Home() {
             CS @ <a href="https://uwaterloo.ca/" target="_blank" rel="noopener noreferrer" className="font-semibold text-zinc-600 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 transition-colors">UWaterloo</a>
           </p>
           
-          <ul className="mt-4 flex flex-col gap-2 text-sm text-zinc-600 font-normal">
-            <li className="flex items-center gap-2">
-              <span className="text-zinc-400 select-none">&gt;</span>
-              <span className="flex items-center gap-1.5">
-                swe @
-                <span className="inline-flex items-center gap-1 font-semibold text-zinc-600">
-                  <Image
-                    src="/images/super_logo.png"
-                    alt="Super.com Logo"
-                    width={16}
-                    height={16}
-                    className="rounded-sm object-contain"
-                  />
-                  <a href="https://super.com/" target="_blank" rel="noopener noreferrer" className="underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 transition-colors">Super.com</a>
-                </span>
-                (S26)
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-zinc-400 select-none">&gt;</span>
-              <span className="flex items-center gap-1.5">
-                swe @
-                <span className="inline-flex items-center gap-1 font-semibold text-zinc-600">
-                  <Image
-                    src="/images/blendable_logo.jpg"
-                    alt="Blendable Logo"
-                    width={16}
-                    height={16}
-                    className="rounded-sm object-contain"
-                  />
-                  <a href="https://blendable.ca/" target="_blank" rel="noopener noreferrer" className="underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 transition-colors">Blendable</a>
-                </span>
-                (F25)
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-zinc-400 select-none">&gt;</span>
-              <span className="flex items-center gap-1.5">
-                dev @
-                <span className="inline-flex items-center gap-1 font-semibold text-zinc-600">
-                  <Image
-                    src="/images/uw_blueprint_logo.jpg"
-                    alt="UW Blueprint Logo"
-                    width={16}
-                    height={16}
-                    className="rounded-sm object-contain"
-                  />
-                  <a href="https://uwblueprint.org/" target="_blank" rel="noopener noreferrer" className="underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 transition-colors">UW Blueprint</a>
-                </span>
-                (🍽️ F4K)
-              </span>
-            </li>
+          <h2 className="mt-6 text-xs font-bold tracking-wider text-zinc-400 uppercase select-none">
+            what i've been up to
+          </h2>
+          
+          <ul className="mt-2 flex flex-col gap-2 text-sm text-zinc-600 font-normal">
+            <Experience
+              imageRef="/images/super_logo.png"
+              role="swe"
+              organization="Super.com"
+              orgUrl="https://super.com/"
+              misc="S26"
+            />
+            <Experience
+              imageRef="/images/blendable_logo.jpg"
+              role="swe"
+              organization="Blendable"
+              orgUrl="https://blendable.ca/"
+              misc="F25"
+            />
+            <Experience
+              imageRef="/images/uw_blueprint_logo.jpg"
+              role="dev"
+              organization="UW Blueprint"
+              orgUrl="https://uwblueprint.org/"
+              misc="🍽️ F4K"
+            />
+            <Experience
+              imageRef="/images/watai.jpg"
+              role="dev"
+              organization="Wat.ai"
+              orgUrl="https://watai.ca/"
+            />
           </ul>
         </div>
         
