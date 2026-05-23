@@ -1,22 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Change the app background color here (e.g. #ffffff, #f9fafb, #f0f2f5, etc.) */
+  --background-2: #fffabf;
+  --background: #fffde6;
+  --foreground: #18181b;
 }
 
 @theme inline {
+  --color-background-2: var(--background-2);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
