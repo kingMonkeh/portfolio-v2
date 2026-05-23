@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-3xl flex-col px-6 py-16 sm:px-16">
@@ -12,8 +14,16 @@ export default function Home() {
           
         </div>
         
-        <div className="relative flex h-24 w-24 shrink-0 overflow-hidden rounded-full border border-zinc-200 bg-white shadow-sm items-center justify-center text-zinc-400 font-bold">
-          HN
+        <div className="relative w-44 shrink-0 -rotate-2 rounded-xl border border-zinc-200/80 bg-white p-3 pb-10 shadow-md transition-all duration-300 hover:rotate-1 hover:scale-105 hover:shadow-xl sm:w-66">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-zinc-50 border border-zinc-100">
+            <Image
+              src="/images/canada_goose.webp"
+              alt="Canada Goose"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 
