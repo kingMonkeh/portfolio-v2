@@ -41,7 +41,7 @@ export default function Home() {
             />
             <Experience
               imageRef="/images/watai.jpg"
-              role="dev"
+              role="ml"
               organization="Wat.ai"
               orgUrl="https://watai.ca/"
             />
